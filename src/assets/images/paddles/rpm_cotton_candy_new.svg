@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <radialGradient id="newBgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#fdf2f8" />
+      <stop offset="100%" stop-color="#f5d0fe" />
+    </radialGradient>
+
+    <!-- Pristine Toray T700 carbon -->
+    <pattern id="pristineCarbon" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#18181b" />
+      <rect width="3" height="3" fill="#27272a" />
+      <rect x="3" y="3" width="3" height="3" fill="#27272a" />
+      <path d="M0,3 L3,0 M3,6 L6,3" stroke="#09090b" stroke-width="0.75" />
+    </pattern>
+
+    <linearGradient id="cottonSwirl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Factory Sealed Plastic Shrink Wrap Effect (Màng co nilon bảo vệ cán vợt mới 100%) -->
+    <linearGradient id="shrinkWrap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.5" />
+    </linearGradient>
+
+    <filter id="studioShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.2" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Clean Studio Background -->
+  <rect width="600" height="450" fill="url(#newBgGrad)" />
+  <ellipse cx="300" cy="410" rx="150" ry="14" fill="#a855f7" opacity="0.12" filter="blur(8px)" />
+
+  <!-- Factory New Authenticity Hangtag (Thẻ bài chính hãng treo trên đầu vợt) -->
+  <g transform="translate(145, 60) rotate(-15)">
+    <line x1="80" y1="40" x2="110" y2="70" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2" />
+    <rect x="15" y="10" width="70" height="34" rx="4" fill="#09090b" stroke="#f43f5e" stroke-width="1" />
+    <circle cx="23" cy="27" r="3" fill="#ffffff" />
+    <text x="50" y="24" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="7" font-weight="900" fill="#ffffff">100% NEW</text>
+    <text x="50" y="34" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="5.5" font-weight="700" fill="#fb7185">SEALED IN BOX</text>
+  </g>
+
+  <!-- Paddle Group (Pristine Factory Condition) -->
+  <g transform="rotate(-8 300 230)" filter="url(#studioShadow)">
+    <!-- Handle -->
+    <path d="M 284 275 L 316 275 L 313 410 L 287 410 Z" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1" />
+    <line x1="284.5" y1="290" x2="315.5" y2="302" stroke="#f472b6" stroke-width="1.8" />
+    <line x1="285" y1="312" x2="315" y2="324" stroke="#f472b6" stroke-width="1.8" />
+    <line x1="285.5" y1="334" x2="314.5" y2="346" stroke="#f472b6" stroke-width="1.8" />
+    <line x1="286" y1="356" x2="314" y2="368" stroke="#f472b6" stroke-width="1.8" />
+    <line x1="286.5" y1="378" x2="313.5" y2="390" stroke="#f472b6" stroke-width="1.8" />
+
+    <!-- FACTORY PLASTIC SHRINK WRAP (Màng nilon bảo vệ cán vợt mới 100%) -->
+    <path d="M 283 273 L 317 273 L 314 412 L 286 412 Z" fill="url(#shrinkWrap)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.8" />
+
+    <!-- Gold Factory Hologram Seal (Tem hologram niêm phong chính hãng) -->
+    <rect x="282" y="325" width="36" height="16" rx="2" fill="#eab308" stroke="#ca8a04" stroke-width="0.8" />
+    <text x="300" y="333" text-anchor="middle" font-family="sans-serif" font-size="4.5" font-weight="900" fill="#000000">FACTORY SEAL</text>
+    <text x="300" y="339" text-anchor="middle" font-family="sans-serif" font-size="3.5" font-weight="bold" fill="#713f12">★ GENUINE ★</text>
+
+    <!-- Collar ring -->
+    <rect x="283" y="271" width="34" height="9" rx="2" fill="#ec4899" />
+    <text x="300" y="278" fill="#ffffff" font-size="5" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">RPM</text>
+
+    <rect x="286" y="409" width="28" height="8" rx="2" fill="#09090b" />
+
+    <!-- Paddle Head -->
+    <rect x="208" y="38" width="184" height="246" rx="42" fill="#09090b" stroke="#ec4899" stroke-width="2.5" />
+    <rect x="214" y="44" width="172" height="234" rx="36" fill="url(#pristineCarbon)" />
+
+    <!-- Cotton Candy Art Graphics -->
+    <path d="M 215,100 Q 300,60 385,120 L 385,175 Q 300,125 215,185 Z" fill="url(#cottonSwirl)" opacity="0.85" />
+
+    <text x="300" y="145" fill="#ffffff" font-size="28" font-family="'Impact', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="4">RPM</text>
+    <text x="300" y="162" fill="#fbcfe8" font-size="8" font-family="'Lexend', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">Q2 COTTON CANDY</text>
+    <text x="300" y="174" fill="#e0e7ff" font-size="6.5" font-weight="700" text-anchor="middle">LIMITED EDITION 16MM</text>
+
+    <rect x="282" y="248" width="36" height="12" rx="2" fill="#09090b" stroke="#ec4899" stroke-width="0.8" />
+    <text x="300" y="256" fill="#f472b6" font-size="4.5" font-family="'Arial', sans-serif" font-weight="900" text-anchor="middle">USA PICKLEBALL</text>
+    <text x="300" y="260" fill="#ffffff" font-size="3.5" font-family="'Arial', sans-serif" font-weight="600" text-anchor="middle">APPROVED</text>
+  </g>
+</svg>

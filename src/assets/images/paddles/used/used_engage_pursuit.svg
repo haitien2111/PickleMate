@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="engageBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="60%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Purple to Teal Pursuit gradient -->
+    <linearGradient id="pursuitUsedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <filter id="engageShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" rx="16" fill="url(#engageBg)"/>
+
+  <text x="200" y="385" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="8" font-weight="700" fill="#d8b4fe" letter-spacing="1">
+    PICKLEMATE VERIFIED INSPECTION • SÀN VỢT CŨ PASS LẠI
+  </text>
+
+  <!-- Paddle Group -->
+  <g transform="rotate(-3 200 200)" filter="url(#engageShadow)">
+    <rect x="187" y="240" width="26" height="115" rx="5" fill="#a855f7"/>
+    <line x1="187" y1="256" x2="213" y2="264" stroke="#7e22ce" stroke-width="1.5"/>
+    <line x1="187" y1="274" x2="213" y2="282" stroke="#7e22ce" stroke-width="1.5"/>
+    <line x1="187" y1="292" x2="213" y2="300" stroke="#7e22ce" stroke-width="1.5"/>
+    <line x1="187" y1="310" x2="213" y2="317" stroke="#7e22ce" stroke-width="1.5"/>
+    <line x1="187" y1="328" x2="213" y2="335" stroke="#7e22ce" stroke-width="1.5"/>
+
+    <rect x="185" y="238" width="30" height="8" rx="1" fill="#09090b"/>
+    <rect x="185" y="350" width="30" height="8" rx="3" fill="#3b0764"/>
+
+    <polygon points="187,242 165,212 235,212 213,242" fill="#18181b"/>
+
+    <rect x="122" y="40" width="156" height="180" rx="36" fill="#09090b" stroke="#a855f7" stroke-width="2"/>
+    <rect x="126" y="44" width="148" height="172" rx="32" fill="#18181b"/>
+
+    <!-- Subtle battle wear on corner -->
+    <path d="M 135 44 Q 155 40 175 42" stroke="#e9d5ff" stroke-width="1.5" stroke-dasharray="3,2" fill="none"/>
+
+    <!-- Geometric Engage pursuit graphic -->
+    <path d="M 130,80 L 270,140 L 270,170 L 130,110 Z" fill="url(#pursuitUsedGrad)" opacity="0.35"/>
+
+    <!-- Engage E Wings logo -->
+    <text x="200" y="105" text-anchor="middle" font-family="'Impact', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="4">
+      ENGAGE
+    </text>
+
+    <text x="200" y="128" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="9" font-weight="800" fill="#e9d5ff" letter-spacing="1">
+      PURSUIT PRO EX 6.0
+    </text>
+    <text x="200" y="142" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="600" fill="#cbd5e1">
+      CONTROL MASTER • RAW TORAY T700
+    </text>
+  </g>
+
+  <!-- Pre-Owned Badge -->
+  <g transform="translate(24, 24)">
+    <rect width="120" height="42" rx="8" fill="#09090b" fill-opacity="0.9" stroke="#a855f7" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="6" fill="#a855f7"/>
+    <text x="16" y="18.5" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="900" fill="#ffffff">✓</text>
+    <text x="28" y="15" font-family="'Lexend', sans-serif" font-size="8.5" font-weight="800" fill="#f3e8ff">
+      VỢT CŨ • 87%
+    </text>
+    <text x="28" y="24" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="500" fill="#cbd5e1">
+      Trầy nhẹ góc • Quấn tím Tourna
+    </text>
+    <text x="10" y="35" font-family="'Lexend', sans-serif" font-size="6" font-weight="700" fill="#38bdf8">
+      # ẢNH CHỤP KIỂM ĐỊNH THỰC TẾ
+    </text>
+  </g>
+</svg>

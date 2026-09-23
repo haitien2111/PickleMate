@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <radialGradient id="bgGradEngage" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+
+    <!-- Raw Toray T700 Friction Surface -->
+    <pattern id="engageCarbon" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#1e1b4b" />
+      <rect width="3" height="3" fill="#2e1065" />
+      <rect x="3" y="3" width="3" height="3" fill="#0f172a" />
+    </pattern>
+
+    <!-- Engage Signature Royal Purple Gradient -->
+    <linearGradient id="engagePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="40%" stop-color="#6d28d9" />
+      <stop offset="80%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <filter id="floorShadowEngage" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.22" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="engageHighlight" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bgGradEngage)" />
+  <ellipse cx="300" cy="405" rx="140" ry="14" fill="#64748b" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="rotate(-8 300 230)" filter="url(#floorShadowEngage)">
+    <!-- HANDLE -->
+    <g id="handleEngage">
+      <path d="M 284 278 L 316 278 L 313 414 L 287 414 Z" fill="#0f172a" stroke="#1e1b4b" stroke-width="1" />
+      <!-- Black Cushion Grip with Purple Stitching Lines -->
+      <line x1="284.5" y1="295" x2="315.5" y2="307" stroke="#312e81" stroke-width="1.8" />
+      <line x1="285" y1="318" x2="315" y2="330" stroke="#312e81" stroke-width="1.8" />
+      <line x1="285.5" y1="341" x2="314.5" y2="353" stroke="#312e81" stroke-width="1.8" />
+      <line x1="286" y1="364" x2="314" y2="376" stroke="#312e81" stroke-width="1.8" />
+      <line x1="286.5" y1="387" x2="313.5" y2="399" stroke="#312e81" stroke-width="1.8" />
+
+      <!-- Engage Purple Collar -->
+      <rect x="283" y="274" width="34" height="8" rx="2" fill="#6d28d9" />
+      <text x="300" y="280" fill="#ffffff" font-size="4" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">ENGAGE</text>
+
+      <!-- Butt Cap -->
+      <rect x="286" y="413" width="28" height="7" rx="2" fill="#0f172a" />
+      <circle cx="300" cy="416.5" r="2.5" fill="#a78bfa" />
+    </g>
+
+    <!-- WIDEBODY HEAD WITH EDGE GUARD -->
+    <rect x="206" y="36" width="188" height="248" rx="44" fill="#0f172a" stroke="#312e81" stroke-width="1.5" />
+    <rect x="212" y="42" width="176" height="236" rx="38" fill="url(#engagePurple)" />
+    
+    <!-- Dynamic Angular Engage Chevrons -->
+    <g transform="translate(300, 110)">
+      <!-- Stylized Engage "E" Wings -->
+      <path d="M -40 -15 L 0 10 L 40 -15 L 40 -5 L 0 20 L -40 -5 Z" fill="#ffffff" opacity="0.95" />
+      <path d="M -30 -30 L 0 -10 L 30 -30 L 30 -22 L 0 -2 L -30 -22 Z" fill="#c4b5fd" opacity="0.8" />
+    </g>
+
+    <!-- Brand Typography -->
+    <text x="300" y="152" fill="#ffffff" font-size="20" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="3">ENGAGE</text>
+    <text x="300" y="168" fill="#ddd6fe" font-size="8.5" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">PURSUIT PRO EX 6.0</text>
+
+    <!-- Tech Divider Line -->
+    <line x1="245" y1="178" x2="355" y2="178" stroke="#a78bfa" stroke-width="1.5" />
+    <circle cx="300" cy="178" r="2.5" fill="#ffffff" />
+
+    <text x="300" y="196" fill="#f5f3ff" font-size="6.5" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="1">MACHPRO CORE • CONTROL MASTER</text>
+    <text x="300" y="208" fill="#c4b5fd" font-size="5.5" font-family="'Arial', sans-serif" font-weight="600" text-anchor="middle" letter-spacing="1">RAW TORAY T700 FRICTION SURFACE</text>
+
+    <!-- Gloss Overlay -->
+    <rect x="212" y="42" width="176" height="236" rx="38" fill="url(#engageHighlight)" />
+
+    <!-- USA Pickleball Stamp -->
+    <rect x="282" y="254" width="36" height="11" rx="2" fill="#0f172a" stroke="#a78bfa" stroke-width="0.8" />
+    <text x="300" y="262" fill="#ffffff" font-size="4" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle">USA PICKLEBALL</text>
+  </g>
+</svg>

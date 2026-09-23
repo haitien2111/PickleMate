@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <radialGradient id="bgGradHonolulu" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+
+    <pattern id="torayWeaveHono" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#0f172a" />
+      <rect width="3" height="3" fill="#1e293b" />
+      <rect x="3" y="3" width="3" height="3" fill="#1e293b" />
+    </pattern>
+
+    <!-- Ocean Teal Wave Gradient -->
+    <linearGradient id="honoTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+
+    <filter id="floorShadowHono" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.22" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="honoHighlight" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bgGradHonolulu)" />
+  <ellipse cx="300" cy="405" rx="140" ry="14" fill="#64748b" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="rotate(-8 300 230)" filter="url(#floorShadowHono)">
+    <!-- HANDLE -->
+    <g id="handleHono">
+      <path d="M 284 278 L 316 278 L 313 414 L 287 414 Z" fill="#115e59" stroke="#0f172a" stroke-width="1" />
+      <!-- Teal Ribbon Grip -->
+      <line x1="284.5" y1="295" x2="315.5" y2="307" stroke="#042f2e" stroke-width="2" />
+      <line x1="285" y1="318" x2="315" y2="330" stroke="#042f2e" stroke-width="2" />
+      <line x1="285.5" y1="341" x2="314.5" y2="353" stroke="#042f2e" stroke-width="2" />
+      <line x1="286" y1="364" x2="314" y2="376" stroke="#042f2e" stroke-width="2" />
+      <line x1="286.5" y1="387" x2="313.5" y2="399" stroke="#042f2e" stroke-width="2" />
+
+      <!-- Natural Wood Accent Band -->
+      <rect x="283" y="274" width="34" height="8" rx="2" fill="#d97706" />
+      <text x="300" y="280" fill="#ffffff" font-size="4" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">HONOLULU</text>
+
+      <!-- Butt Cap -->
+      <rect x="286" y="413" width="28" height="7" rx="2" fill="#042f2e" />
+    </g>
+
+    <!-- PADDLE HEAD -->
+    <rect x="210" y="38" width="180" height="248" rx="42" fill="#09090b" stroke="#14b8a6" stroke-width="1.2" />
+    <rect x="216" y="44" width="168" height="236" rx="36" fill="url(#torayWeaveHono)" />
+    
+    <!-- Hawaiian Ocean Wave Emblem -->
+    <g transform="translate(300, 115)">
+      <circle cx="0" cy="0" r="28" fill="url(#honoTeal)" opacity="0.9" />
+      <!-- Cresting Wave -->
+      <path d="M -18 8 Q -10 -18 2 -4 Q 12 6 22 -6 Q 16 16 -4 14 Q -16 12 -18 8 Z" fill="#ffffff" />
+    </g>
+
+    <!-- Brand Typography -->
+    <text x="300" y="165" fill="#f8fafc" font-size="16" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">HONOLULU</text>
+    <text x="300" y="180" fill="#2dd4bf" font-size="8" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">J2K CARBON PRO 16MM</text>
+
+    <!-- Specs -->
+    <text x="300" y="200" fill="#cbd5e1" font-size="6" font-family="'Arial', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">RAW TORAY T700 • HYBRID SHAPE</text>
+    
+    <!-- Gloss Overlay -->
+    <rect x="216" y="44" width="168" height="236" rx="36" fill="url(#honoHighlight)" />
+
+    <!-- USAPA Stamp -->
+    <rect x="282" y="254" width="36" height="11" rx="2" fill="#0f172a" stroke="#2dd4bf" stroke-width="0.8" />
+    <text x="300" y="262" fill="#2dd4bf" font-size="4" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle">USA PICKLEBALL</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "PickleMate",
+  "description": "Hệ sinh thái Pickleball số 1 Việt Nam - Nền tảng Tất cả trong một: Đặt Sân, Ghép Kèo DUPR, Chợ Vợt Kiểm Định và Custom Lab",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

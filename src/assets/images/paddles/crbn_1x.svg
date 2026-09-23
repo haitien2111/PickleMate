@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <radialGradient id="bgGradCrbn" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+
+    <!-- Toray T700 Raw Carbon Texture -->
+    <pattern id="crbnTorayPattern" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#111113" />
+      <rect width="2.5" height="2.5" fill="#1c1c20" />
+      <rect x="2.5" y="2.5" width="2.5" height="2.5" fill="#1c1c20" />
+      <line x1="0" y1="2.5" x2="5" y2="2.5" stroke="#0a0a0c" stroke-width="0.5" />
+    </pattern>
+
+    <linearGradient id="stealthEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <filter id="floorShadowCrbn" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.22" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="crbnHighlight" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.14" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bgGradCrbn)" />
+  <ellipse cx="300" cy="405" rx="140" ry="14" fill="#64748b" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="rotate(-8 300 230)" filter="url(#floorShadowCrbn)">
+    <!-- HANDLE -->
+    <g id="handleCrbn">
+      <path d="M 284 278 L 316 278 L 313 414 L 287 414 Z" fill="#09090b" stroke="#18181b" stroke-width="1" />
+      <!-- Black Perforated Grip Overlaps -->
+      <line x1="284.5" y1="296" x2="315.5" y2="308" stroke="#27272a" stroke-width="2" />
+      <line x1="285" y1="320" x2="315" y2="332" stroke="#27272a" stroke-width="2" />
+      <line x1="285.5" y1="344" x2="314.5" y2="356" stroke="#27272a" stroke-width="2" />
+      <line x1="286" y1="368" x2="314" y2="380" stroke="#27272a" stroke-width="2" />
+      <line x1="286.5" y1="392" x2="313.5" y2="404" stroke="#27272a" stroke-width="2" />
+
+      <!-- Minimalist Matte Collar -->
+      <rect x="283" y="274" width="34" height="8" rx="2" fill="#000000" stroke="#27272a" stroke-width="0.5" />
+      <text x="300" y="280" fill="#a1a1aa" font-size="4" font-family="'Helvetica Neue', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">crbn</text>
+
+      <!-- Butt Cap with Embossed CRBN -->
+      <rect x="286" y="413" width="28" height="7" rx="2" fill="#000000" />
+    </g>
+
+    <!-- ELONGATED PADDLE HEAD WITH SQUARED SHOULDERS -->
+    <rect x="212" y="32" width="176" height="254" rx="34" fill="url(#stealthEdge)" stroke="#27272a" stroke-width="1.2" />
+    <rect x="218" y="38" width="164" height="242" rx="28" fill="url(#crbnTorayPattern)" />
+    <rect x="218" y="38" width="164" height="242" rx="28" fill="url(#crbnHighlight)" />
+
+    <!-- Minimalist CRBN Typography -->
+    <g transform="translate(300, 155)">
+      <text x="0" y="0" fill="#f4f4f5" font-size="28" font-family="'Arial', 'Helvetica', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="4">crbn</text>
+      <text x="0" y="20" fill="#a1a1aa" font-size="8.5" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="3">1X POWER SERIES</text>
+    </g>
+
+    <!-- Subtle Technical Grid Lines -->
+    <line x1="250" y1="190" x2="350" y2="190" stroke="#3f3f46" stroke-width="1" />
+    <text x="300" y="204" fill="#71717a" font-size="6.5" font-family="'Arial', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1.5">16MM RAW TORAY T700</text>
+    <text x="300" y="216" fill="#52525b" font-size="5.5" font-family="'Arial', sans-serif" font-weight="600" text-anchor="middle" letter-spacing="1">THERMOFORMED UNIBODY</text>
+
+    <!-- USA Pickleball Stamp -->
+    <rect x="284" y="254" width="32" height="10" rx="1.5" fill="#000000" stroke="#52525b" stroke-width="0.7" />
+    <text x="300" y="261" fill="#d4d4d8" font-size="4" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle">USAP APPROVED</text>
+  </g>
+</svg>

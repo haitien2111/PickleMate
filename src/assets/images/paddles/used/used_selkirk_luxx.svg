@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="luxxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="goldAirGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="50%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+
+    <filter id="luxxShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" rx="16" fill="url(#luxxBg)"/>
+
+  <!-- Ruler scale markings -->
+  <g stroke="#64748b" stroke-width="0.8" opacity="0.4">
+    <line x1="20" y1="20" x2="20" y2="380"/>
+    <line x1="20" y1="60" x2="28" y2="60"/>
+    <line x1="20" y1="120" x2="32" y2="120"/>
+    <line x1="20" y1="180" x2="28" y2="180"/>
+    <line x1="20" y1="240" x2="32" y2="240"/>
+    <line x1="20" y1="300" x2="28" y2="300"/>
+    <line x1="20" y1="360" x2="32" y2="360"/>
+  </g>
+
+  <text x="200" y="385" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="8" font-weight="700" fill="#64748b" letter-spacing="1">
+    PICKLEMATE VERIFIED INSPECTION • SÀN VỢT CŨ PASS LẠI
+  </text>
+
+  <!-- Paddle Group -->
+  <g transform="rotate(-3 200 200)" filter="url(#luxxShadow)">
+    <!-- Handle (White overgrip wrap with player overlap) -->
+    <rect x="187" y="240" width="26" height="115" rx="5" fill="#f1f5f9"/>
+    <line x1="187" y1="256" x2="213" y2="263" stroke="#94a3b8" stroke-width="1.6"/>
+    <line x1="187" y1="274" x2="213" y2="281" stroke="#94a3b8" stroke-width="1.6"/>
+    <line x1="187" y1="292" x2="213" y2="299" stroke="#94a3b8" stroke-width="1.6"/>
+    <line x1="187" y1="310" x2="213" y2="317" stroke="#94a3b8" stroke-width="1.6"/>
+    <line x1="187" y1="328" x2="213" y2="335" stroke="#94a3b8" stroke-width="1.6"/>
+
+    <rect x="185" y="238" width="30" height="8" rx="1" fill="#09090b"/>
+    <rect x="185" y="350" width="30" height="8" rx="3" fill="#0f172a"/>
+
+    <!-- Throat -->
+    <polygon points="187,242 165,205 235,205 213,242" fill="#18181b"/>
+    <!-- AIR DYNAMIC THROAT HOLE -->
+    <polygon points="190,230 178,208 222,208 210,230" fill="#0f172a"/>
+
+    <!-- Widebody Paddle (Thikset 20mm profile) -->
+    <path d="M 125,55 C 125,35 145,32 200,32 C 255,32 275,35 275,55 L 275,185 C 275,205 255,215 235,215 L 165,215 C 145,215 125,205 125,185 Z" fill="#09090b" stroke="#334155" stroke-width="3"/>
+
+    <!-- Face (Florek Carbon) -->
+    <path d="M 129,57 C 129,39 148,36 200,36 C 252,36 271,39 271,57 L 271,183 C 271,201 252,211 233,211 L 167,211 C 148,211 129,201 129,183 Z" fill="#18181b"/>
+
+    <!-- Gold & Royal Blue Graphics -->
+    <path d="M 130,120 Q 180,85 270,115 L 270,150 Q 185,120 130,165 Z" fill="url(#goldAirGrad)" opacity="0.85"/>
+
+    <text x="200" y="115" text-anchor="middle" font-family="'Impact', sans-serif" font-size="22" font-weight="900" fill="#ffffff" letter-spacing="3">
+      SELKIRK
+    </text>
+    <text x="200" y="130" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="9" font-weight="800" fill="#fef08a" letter-spacing="1">
+      LUXX CONTROL AIR
+    </text>
+    <text x="200" y="141" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="600" fill="#cbd5e1">
+      EPIC 20MM THIKSET CORE
+    </text>
+  </g>
+
+  <!-- Pre-Owned Badge -->
+  <g transform="translate(24, 24)">
+    <rect width="120" height="42" rx="8" fill="#09090b" fill-opacity="0.9" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="6" fill="#10b981"/>
+    <text x="16" y="18.5" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="900" fill="#09090b">✓</text>
+    <text x="28" y="15" font-family="'Lexend', sans-serif" font-size="8.5" font-weight="800" fill="#a7f3d0">
+      VỢT CŨ • 92%
+    </text>
+    <text x="28" y="24" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="500" fill="#cbd5e1">
+      Lõi 20mm cực êm • Không cấn dập
+    </text>
+    <text x="10" y="35" font-family="'Lexend', sans-serif" font-size="6" font-weight="700" fill="#38bdf8">
+      # ẢNH CHỤP KIỂM ĐỊNH THỰC TẾ
+    </text>
+  </g>
+</svg>

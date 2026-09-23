@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <!-- Background Studio Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+
+    <!-- Carbon Fiber Micro Weave Pattern -->
+    <pattern id="carbonWeave" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#18181b" />
+      <rect width="3" height="3" fill="#27272a" />
+      <rect x="3" y="3" width="3" height="3" fill="#27272a" />
+      <path d="M0,3 L3,0 M3,6 L6,3" stroke="#09090b" stroke-width="0.75" />
+    </pattern>
+
+    <!-- Edge Guard Gradient -->
+    <linearGradient id="edgeGuard" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <!-- White Grip Texture Pattern -->
+    <pattern id="gripPerforated" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#f8fafc" />
+      <circle cx="5" cy="5" r="0.75" fill="#cbd5e1" />
+      <line x1="0" y1="10" x2="10" y2="0" stroke="#e2e8f0" stroke-width="0.8" />
+    </pattern>
+
+    <!-- Soft Floor Drop Shadow -->
+    <filter id="floorShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.22" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Specular Highlight -->
+    <linearGradient id="highlightGloss" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="url(#bgGrad)" />
+
+  <!-- Studio Subtle Ground Reflection Line -->
+  <ellipse cx="300" cy="405" rx="140" ry="14" fill="#64748b" opacity="0.12" filter="blur(8px)" />
+
+  <!-- Paddle Group (Tilted slightly 12 deg for dynamic angle) -->
+  <g transform="rotate(-8 300 230)" filter="url(#floorShadow)">
+
+    <!-- HANDLE BASE -->
+    <g id="handle">
+      <!-- Handle Core -->
+      <path d="M 284 275 L 316 275 L 313 410 L 287 410 Z" fill="#0f172a" />
+      
+      <!-- White Perforated Grip Wrap -->
+      <path d="M 284 275 L 316 275 L 313 410 L 287 410 Z" fill="url(#gripPerforated)" stroke="#cbd5e1" stroke-width="0.8" />
+
+      <!-- Grip Spiral Overlap Lines -->
+      <line x1="284.5" y1="290" x2="315.5" y2="302" stroke="#94a3b8" stroke-width="1.8" />
+      <line x1="285" y1="312" x2="315" y2="324" stroke="#94a3b8" stroke-width="1.8" />
+      <line x1="285.5" y1="334" x2="314.5" y2="346" stroke="#94a3b8" stroke-width="1.8" />
+      <line x1="286" y1="356" x2="314" y2="368" stroke="#94a3b8" stroke-width="1.8" />
+      <line x1="286.5" y1="378" x2="313.5" y2="390" stroke="#94a3b8" stroke-width="1.8" />
+
+      <!-- Black Rubber Collar Ring with JOOLA White Text -->
+      <rect x="283" y="271" width="34" height="9" rx="2" fill="#09090b" stroke="#27272a" stroke-width="0.5" />
+      <text x="300" y="278" fill="#f8fafc" font-size="5" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">JOOLA</text>
+
+      <!-- Butt Cap with Embossed Logo -->
+      <rect x="286" y="409" width="28" height="8" rx="2" fill="#09090b" />
+      <circle cx="300" cy="413" r="2.5" fill="#f8fafc" />
+    </g>
+
+    <!-- PADDLE HEAD -->
+    <!-- 1. Outer Protective Edge Guard -->
+    <rect x="208" y="38" width="184" height="246" rx="42" fill="url(#edgeGuard)" stroke="#3f3f46" stroke-width="1.2" />
+
+    <!-- 2. Main Carbon Fiber Face Surface -->
+    <rect x="214" y="44" width="172" height="234" rx="36" fill="url(#carbonWeave)" />
+
+    <!-- 3. Specular Light Reflection Gradient Overlay -->
+    <rect x="214" y="44" width="172" height="234" rx="36" fill="url(#highlightGloss)" />
+
+    <!-- 4. Ben Johns Perseus Iconic Graphics -->
+    <!-- Geometric Apex Triangle (JOOLA Logo Icon) -->
+    <g transform="translate(300, 105)">
+      <!-- Joola Stylized Triangle -->
+      <path d="M 0 -22 L 20 12 L -20 12 Z" fill="none" stroke="#f8fafc" stroke-width="4.5" stroke-linejoin="round" />
+      <path d="M 0 -10 L 10 7 L -10 7 Z" fill="#f8fafc" />
+    </g>
+
+    <!-- JOOLA Bold Typography -->
+    <text x="300" y="142" fill="#ffffff" font-size="21" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="4">JOOLA</text>
+
+    <!-- Perseus CFS 16mm Swift Badge -->
+    <text x="300" y="158" fill="#38bdf8" font-size="7.5" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2.5">BEN JOHNS PERSEUS</text>
+    
+    <!-- Accent Line in Joola Neon Cyan -->
+    <line x1="248" y1="166" x2="352" y2="166" stroke="#38bdf8" stroke-width="1.8" />
+    <circle cx="300" cy="166" r="2.5" fill="#ffffff" />
+
+    <!-- Technology Specs Stamps -->
+    <text x="300" y="180" fill="#94a3b8" font-size="6" font-family="'Arial', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">CHARGED CARBON SURFACE • 16MM</text>
+    <text x="300" y="192" fill="#64748b" font-size="5.5" font-family="'Arial', sans-serif" font-weight="600" text-anchor="middle" letter-spacing="0.5">CFS REACTIVE HONEYCOMB CORE</text>
+
+    <!-- Subtle Sweetspot Radial Ring -->
+    <circle cx="300" cy="135" r="44" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="3 3" fill="none" />
+
+    <!-- Official USA Pickleball Approved Stamp -->
+    <rect x="282" y="248" width="36" height="12" rx="2" fill="#09090b" stroke="#38bdf8" stroke-width="0.8" />
+    <text x="300" y="256" fill="#38bdf8" font-size="4.5" font-family="'Arial', sans-serif" font-weight="900" text-anchor="middle">USA PICKLEBALL</text>
+    <text x="300" y="260" fill="#f8fafc" font-size="3.5" font-family="'Arial', sans-serif" font-weight="600" text-anchor="middle">APPROVED</text>
+  </g>
+</svg>

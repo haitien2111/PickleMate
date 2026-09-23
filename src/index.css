@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./assets/fonts/Lexend-Variable.ttf') format('truetype-variations'),
+       url('/fonts/Lexend-Variable.ttf') format('truetype-variations'),
+       url('./assets/fonts/Lexend-Variable.ttf') format('truetype'),
+       url('/fonts/Lexend-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alias Cabinet Grotesk sang Lexend để đảm bảo hiển thị đồng bộ nét dày không chân */
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('./assets/fonts/Lexend-Variable.ttf') format('truetype-variations'),
+       url('/fonts/Lexend-Variable.ttf') format('truetype-variations'),
+       url('./assets/fonts/Lexend-Variable.ttf') format('truetype'),
+       url('/fonts/Lexend-Variable.ttf') format('truetype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uber Move Medium';
+  src: url('./assets/fonts/UberMove-Medium.ttf') format('truetype'),
+       url('/fonts/UberMove-Medium.ttf') format('truetype');
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uber Move Bold';
+  src: url('./assets/fonts/UberMove-Bold.ttf') format('truetype'),
+       url('/fonts/UberMove-Bold.ttf') format('truetype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Lexend', 'Uber Move', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-lexend: 'Lexend', sans-serif;
+  --font-uber: 'Uber Move Medium', 'Uber Move', sans-serif;
+  --font-ganh: 'Uber Move Medium', 'Uber Move', sans-serif;
+}
+
+/* Font chữ không chân, nét dày và lực (Lexend Bold/ExtraBold) giống ảnh mẫu */
+body,
+.font-sans {
+  font-family: 'Lexend', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-heading,
+.font-lexend,
+.title,
+.font-bold,
+.font-extrabold,
+.font-black {
+  font-family: 'Lexend', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Kiểu chữ in đậm nổi bật cho các phần tiện ích & huy hiệu */
+.tien-ich-bar,
+.tien-ich-badge,
+.tien-ich-item,
+.tien-ich-tag,
+.badge-guide {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <radialGradient id="bgGradZocker" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+
+    <pattern id="zockerCarbon" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#18181b" />
+      <rect width="3" height="3" fill="#27272a" />
+      <rect x="3" y="3" width="3" height="3" fill="#27272a" />
+    </pattern>
+
+    <!-- Lime Green Energy Gradient -->
+    <linearGradient id="zockerLime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bef264" />
+      <stop offset="50%" stop-color="#84cc16" />
+      <stop offset="100%" stop-color="#4d7c0f" />
+    </linearGradient>
+
+    <filter id="floorShadowZocker" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="8" dy="24" result="offsetblur" />
+      <feFlood flood-color="#0f172a" flood-opacity="0.22" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="zockerHighlight" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bgGradZocker)" />
+  <ellipse cx="300" cy="405" rx="140" ry="14" fill="#64748b" opacity="0.12" filter="blur(8px)" />
+
+  <g transform="rotate(-8 300 230)" filter="url(#floorShadowZocker)">
+    <!-- HANDLE -->
+    <g id="handleZocker">
+      <path d="M 284 278 L 316 278 L 313 414 L 287 414 Z" fill="#18181b" stroke="#27272a" stroke-width="1" />
+      <!-- Black Cushion Grip with Lime Lines -->
+      <line x1="284.5" y1="295" x2="315.5" y2="307" stroke="#4d7c0f" stroke-width="1.8" />
+      <line x1="285" y1="318" x2="315" y2="330" stroke="#4d7c0f" stroke-width="1.8" />
+      <line x1="285.5" y1="341" x2="314.5" y2="353" stroke="#4d7c0f" stroke-width="1.8" />
+      <line x1="286" y1="364" x2="314" y2="376" stroke="#4d7c0f" stroke-width="1.8" />
+      <line x1="286.5" y1="387" x2="313.5" y2="399" stroke="#4d7c0f" stroke-width="1.8" />
+
+      <!-- Lime Collar -->
+      <rect x="283" y="274" width="34" height="8" rx="2" fill="#84cc16" />
+      <text x="300" y="280" fill="#09090b" font-size="4.5" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">ZOCKER</text>
+
+      <!-- Butt Cap -->
+      <rect x="286" y="413" width="28" height="7" rx="2" fill="#09090b" />
+      <circle cx="300" cy="416.5" r="2.5" fill="#84cc16" />
+    </g>
+
+    <!-- PADDLE HEAD -->
+    <rect x="208" y="38" width="184" height="248" rx="42" fill="#09090b" stroke="#84cc16" stroke-width="1.5" />
+    <rect x="214" y="44" width="172" height="236" rx="36" fill="url(#zockerCarbon)" />
+
+    <!-- Dynamic Zocker "Z" Flash Geometric Art -->
+    <path d="M 230 65 L 360 65 L 290 140 L 370 140 L 350 160 L 230 160 L 300 85 L 230 85 Z" fill="url(#zockerLime)" opacity="0.9" />
+
+    <!-- Brand Typography -->
+    <text x="300" y="190" fill="#ffffff" font-size="20" font-family="'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="3">ZOCKER</text>
+    <text x="300" y="206" fill="#bef264" font-size="8.5" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">ASPIRE SPEED PRO 16MM</text>
+
+    <!-- Specs -->
+    <text x="300" y="224" fill="#a1a1aa" font-size="6.5" font-family="'Arial', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">CARBON TORAY T700 • HONEYCOMB</text>
+
+    <!-- Gloss Overlay -->
+    <rect x="214" y="44" width="172" height="236" rx="36" fill="url(#zockerHighlight)" />
+
+    <!-- USAPA Stamp -->
+    <rect x="282" y="254" width="36" height="11" rx="2" fill="#09090b" stroke="#84cc16" stroke-width="0.8" />
+    <text x="300" y="262" fill="#84cc16" font-size="4" font-family="'Arial', sans-serif" font-weight="800" text-anchor="middle">USA PICKLEBALL</text>
+  </g>
+</svg>

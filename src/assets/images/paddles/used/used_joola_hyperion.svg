@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hyperionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Red Overgrip wrap -->
+    <linearGradient id="redOvergrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="40%" stop-color="#f87171"/>
+      <stop offset="80%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+
+    <pattern id="hyperionCarbon" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#18181b"/>
+      <rect width="3" height="3" fill="#27272a"/>
+      <rect x="3" y="3" width="3" height="3" fill="#27272a"/>
+    </pattern>
+
+    <filter id="hyperionShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Inspection Background -->
+  <rect width="400" height="400" rx="16" fill="url(#hyperionBg)"/>
+
+  <!-- Ruler scale markings -->
+  <g stroke="#64748b" stroke-width="0.8" opacity="0.4">
+    <line x1="20" y1="20" x2="20" y2="380"/>
+    <line x1="20" y1="60" x2="28" y2="60"/>
+    <line x1="20" y1="120" x2="32" y2="120"/>
+    <line x1="20" y1="180" x2="28" y2="180"/>
+    <line x1="20" y1="240" x2="32" y2="240"/>
+    <line x1="20" y1="300" x2="28" y2="300"/>
+    <line x1="20" y1="360" x2="32" y2="360"/>
+  </g>
+
+  <text x="200" y="385" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="8" font-weight="700" fill="#64748b" letter-spacing="1">
+    PICKLEMATE VERIFIED INSPECTION • SÀN VỢT CŨ PASS LẠI
+  </text>
+
+  <!-- Paddle Group -->
+  <g transform="rotate(3 200 200)" filter="url(#hyperionShadow)">
+    <!-- Handle (Red overgrip wrap) -->
+    <rect x="187" y="240" width="26" height="115" rx="5" fill="url(#redOvergrip)"/>
+    <line x1="187" y1="256" x2="213" y2="263" stroke="#991b1b" stroke-width="1.8"/>
+    <line x1="187" y1="274" x2="213" y2="281" stroke="#991b1b" stroke-width="1.8"/>
+    <line x1="187" y1="292" x2="213" y2="299" stroke="#991b1b" stroke-width="1.8"/>
+    <line x1="187" y1="310" x2="213" y2="317" stroke="#991b1b" stroke-width="1.8"/>
+    <line x1="187" y1="328" x2="213" y2="335" stroke="#991b1b" stroke-width="1.8"/>
+
+    <!-- Black finishing tape -->
+    <rect x="185" y="238" width="30" height="8" rx="1" fill="#09090b"/>
+
+    <!-- Butt Cap -->
+    <rect x="185" y="350" width="30" height="8" rx="3" fill="#0f172a"/>
+
+    <!-- Throat -->
+    <polygon points="187,242 165,212 235,212 213,242" fill="#18181b"/>
+
+    <!-- Outer Edge Guard (with top battle wear) -->
+    <rect x="122" y="40" width="156" height="180" rx="40" fill="#09090b" stroke="#3f3f46" stroke-width="2.5"/>
+
+    <!-- Battle scuffs on edge guard -->
+    <path d="M 135 44 Q 155 40 175 42" stroke="#a1a1aa" stroke-width="1.8" stroke-dasharray="3,2" fill="none"/>
+    <path d="M 230 42 Q 250 43 262 50" stroke="#a1a1aa" stroke-width="1.5" stroke-dasharray="4,2" fill="none"/>
+
+    <!-- Face -->
+    <rect x="127" y="45" width="146" height="170" rx="35" fill="url(#hyperionCarbon)"/>
+
+    <!-- Curving aerodynamic white swoosh -->
+    <path d="M 135 150 Q 180 80 265 105 L 265 125 Q 185 100 135 170 Z" fill="#38bdf8" opacity="0.3"/>
+
+    <!-- JOOLA Logo -->
+    <polygon points="200,68 174,106 226,106" fill="none" stroke="#38bdf8" stroke-width="6.5" stroke-linejoin="round"/>
+    <circle cx="200" cy="88" r="4.5" fill="#38bdf8"/>
+
+    <!-- Typography -->
+    <text x="200" y="130" text-anchor="middle" font-family="'Impact', sans-serif" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="2">
+      JOOLA
+    </text>
+    <text x="200" y="145" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="8.5" font-weight="800" fill="#bae6fd" letter-spacing="0.5">
+      VISION CFS 16MM
+    </text>
+    <text x="200" y="156" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="500" fill="#94a3b8">
+      CARBON GRIP SURFACE (CGS)
+    </text>
+  </g>
+
+  <!-- Pre-Owned Badge -->
+  <g transform="translate(24, 24)">
+    <rect width="120" height="42" rx="8" fill="#09090b" fill-opacity="0.9" stroke="#f59e0b" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="6" fill="#f59e0b"/>
+    <text x="16" y="18.5" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="900" fill="#09090b">✓</text>
+    <text x="28" y="15" font-family="'Lexend', sans-serif" font-size="8.5" font-weight="800" fill="#fde68a">
+      VỢT CŨ • 86%
+    </text>
+    <text x="28" y="24" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="500" fill="#cbd5e1">
+      Trầy mép viền • Cán đã quấn đỏ
+    </text>
+    <text x="10" y="35" font-family="'Lexend', sans-serif" font-size="6" font-weight="700" fill="#38bdf8">
+      # ẢNH CHỤP KIỂM ĐỊNH THỰC TẾ
+    </text>
+  </g>
+</svg>

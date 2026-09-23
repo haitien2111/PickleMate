@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cottonUsedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a044e"/>
+      <stop offset="60%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Cotton Candy Gradient -->
+    <linearGradient id="cottonCandyUsed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Pink overgrip wrap -->
+    <linearGradient id="pinkOvergrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="40%" stop-color="#f9a8d4"/>
+      <stop offset="80%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+
+    <filter id="cottonShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" rx="16" fill="url(#cottonUsedBg)"/>
+
+  <text x="200" y="385" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="8" font-weight="700" fill="#f472b6" letter-spacing="1">
+    PICKLEMATE VERIFIED INSPECTION • SÀN VỢT CŨ PASS LẠI
+  </text>
+
+  <!-- Paddle Group -->
+  <g transform="rotate(-2 200 200)" filter="url(#cottonShadow)">
+    <rect x="187" y="240" width="26" height="115" rx="5" fill="url(#pinkOvergrip)"/>
+    <line x1="187" y1="256" x2="213" y2="264" stroke="#be185d" stroke-width="1.5"/>
+    <line x1="187" y1="274" x2="213" y2="282" stroke="#be185d" stroke-width="1.5"/>
+    <line x1="187" y1="292" x2="213" y2="300" stroke="#be185d" stroke-width="1.5"/>
+    <line x1="187" y1="310" x2="213" y2="317" stroke="#be185d" stroke-width="1.5"/>
+    <line x1="187" y1="328" x2="213" y2="335" stroke="#be185d" stroke-width="1.5"/>
+
+    <rect x="185" y="238" width="30" height="8" rx="1" fill="#09090b"/>
+    <rect x="185" y="350" width="30" height="8" rx="3" fill="#4a044e"/>
+
+    <polygon points="187,242 165,212 235,212 213,242" fill="#18181b"/>
+
+    <rect x="122" y="40" width="156" height="180" rx="42" fill="#09090b" stroke="#ec4899" stroke-width="2.5"/>
+    <rect x="126" y="44" width="148" height="172" rx="38" fill="#18181b"/>
+
+    <!-- Subtle scratch on pink edge -->
+    <path d="M 135 44 Q 155 40 175 42" stroke="#fbcfe8" stroke-width="1.5" stroke-dasharray="3,2" fill="none"/>
+
+    <!-- Swirl Cotton Candy visual -->
+    <path d="M 130 90 Q 200 60 270 110 L 270 160 Q 200 130 130 170 Z" fill="url(#cottonCandyUsed)" opacity="0.45"/>
+
+    <text x="200" y="112" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="26" font-weight="900" fill="#ffffff" letter-spacing="3">
+      RPM
+    </text>
+
+    <text x="200" y="132" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="9" font-weight="800" fill="#fbcfe8" letter-spacing="1">
+      Q2 COTTON CANDY
+    </text>
+    <text x="200" y="145" text-anchor="middle" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="600" fill="#cbd5e1">
+      LIMITED EDITION • RAW T700 16MM
+    </text>
+  </g>
+
+  <!-- Pre-Owned Badge -->
+  <g transform="translate(24, 24)">
+    <rect width="120" height="42" rx="8" fill="#09090b" fill-opacity="0.9" stroke="#ec4899" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="6" fill="#ec4899"/>
+    <text x="16" y="18.5" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="900" fill="#ffffff">✓</text>
+    <text x="28" y="15" font-family="'Lexend', sans-serif" font-size="8.5" font-weight="800" fill="#fbcfe8">
+      VỢT CŨ • 92%
+    </text>
+    <text x="28" y="24" font-family="'Lexend', sans-serif" font-size="6.5" font-weight="500" fill="#cbd5e1">
+      Bản giới hạn • Xước nhẹ viền
+    </text>
+    <text x="10" y="35" font-family="'Lexend', sans-serif" font-size="6" font-weight="700" fill="#38bdf8">
+      # ẢNH CHỤP KIỂM ĐỊNH THỰC TẾ
+    </text>
+  </g>
+</svg>
